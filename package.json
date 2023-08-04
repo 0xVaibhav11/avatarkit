@@ -1,0 +1,41 @@
+{
+  "name": "@notpro/avatarkit",
+  "version": "0.1.0",
+  "description": "A lib for generating avatars form a string",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && prettier --write src/**/* && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJs --outDir dist/cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opmando/notpro.git#main"
+  },
+  "keywords": [
+    "avatar"
+  ],
+  "author": "OpMando <opmando.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opmando/notpro/issues"
+  },
+  "homepage": "https://github.com/opmando/notpro/blob/main/README.md",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

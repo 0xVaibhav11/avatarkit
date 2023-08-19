@@ -1,5 +1,6 @@
 {
-  "name": "@notpro/avatarkit",
+  "name": "@poc/avatarkit",
+  "private": false,
   "version": "0.1.0",
   "description": "A lib for generating avatars form a string",
   "main": "dist/cjs/index.js",
@@ -15,17 +16,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opmando/notpro.git#main"
+    "url": "https://github.com/0xVaibhav11/avatarkit#main"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
-    "avatar"
+    "avatar",
+    "pfp",
+    "profile",
+    "emoji"
   ],
-  "author": "OpMando <opmando.dev@gmail.com>",
-  "license": "MIT",
+  "author": "0xVaibhav11 <vanoobcoder@gmail.com>",
+  "license": "wtfpl",
   "bugs": {
-    "url": "https://github.com/opmando/notpro/issues"
+    "url": "https://github.com/0xVaibhav11/avatarkit/issues"
   },
-  "homepage": "https://github.com/opmando/notpro/blob/main/README.md",
+  "homepage": "https://github.com/0xVaibhav11/avatarkit",
   "devDependencies": {
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.18",

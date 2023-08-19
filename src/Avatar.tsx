@@ -5,7 +5,7 @@ export interface EmojiAvatarProps {
   string: string;
   emojiType: 'flat' | '3d';
   size?: number;
-  borderRadius?: 50;
+  borderRadius?: number;
 }
 
 const Avatar: React.FC<EmojiAvatarProps> = (props) => {
@@ -19,7 +19,7 @@ const Avatar: React.FC<EmojiAvatarProps> = (props) => {
       userSelect: 'none',
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: `${borderRadius}%`,
+      borderRadius: `${borderRadius ? borderRadius : 50}%`,
       aspectRatio: '1/1',
       width: `${size ? size : 24}px`,
       backgroundColor: emojiType === 'flat' ? color : color3d,

@@ -1,7 +1,7 @@
 {
-  "name": "poc-avatarkit",
+  "name": "poc-avatar-kit",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lib for generating avatars form a string",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -11,6 +11,7 @@
   "scripts": {
     "build": "rm -rf dist && prettier --write src/**/* && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
+    "prepare": "yarn build",
     "build:cjs": "tsc --module CommonJs --outDir dist/cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

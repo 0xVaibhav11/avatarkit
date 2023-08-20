@@ -7,7 +7,7 @@
 ## 📦 Installation
 
 ```bash
-npm i avatarkit-poc
+npm i poc-avatarkit
 # or
-yarn add avatarkit-poc
+yarn add poc-avatarkit
 ```

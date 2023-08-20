@@ -1,9 +1,10 @@
 {
-  "name": "poc-avatar-kit",
+  "name": "avatarkit-poc",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "A lib for generating avatars form a string",
   "main": "dist/cjs/index.js",
+  "types": "dist/esm/index.d.ts",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
